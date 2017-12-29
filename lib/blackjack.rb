@@ -32,14 +32,14 @@ end
 
 def hit?(num)
 prompt_user
+result = [num]
 if get_user_input == "s"
   return num
 elsif get_user_input == "h"
-  new_card = deal_card
-  num += new_card
+  result << deal_card
 
-# else
-#   return invalid_command
+else
+  return invalid_command
 end
 
 end
