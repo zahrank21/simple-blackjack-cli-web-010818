@@ -30,7 +30,7 @@ def initial_round
   return hand
 end
 
-def hit?(num)
+def hit?(total)
   prompt_user
   user_hit = get_user_input
   if user_hit == "s"
