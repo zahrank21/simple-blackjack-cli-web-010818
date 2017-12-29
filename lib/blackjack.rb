@@ -31,17 +31,20 @@ def initial_round
 end
 
 def hit?(num)
-prompt_user
-result = [num]
-next if get_user_input == "s"
-  return result.reduce(:+)
-elsif get_user_input == "h"
-  result << deal_card
-else
-  invalid_command
   prompt_user
-end
-return result.reduce(:+)
+  hit = get_user_input
+  next if hit == "s"
+elsif hit == "h"
+    whole += deal_card
+    display_card_total(whole)
+    if whole > 21
+      end_game(whole)
+    end
+  else
+    invalid_command
+    prompt_user
+  end
+  return total
 end
 
 def invalid_command
