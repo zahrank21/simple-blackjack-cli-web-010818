@@ -35,7 +35,8 @@ prompt_user
 if get_user_input == "s"
   return num
 elsif get_user_input == "h"
-  return num + deal_card
+  new_card = deal_card
+  return new_card + num
 else
   return invalid_command
 end
