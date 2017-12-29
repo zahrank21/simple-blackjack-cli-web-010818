@@ -26,7 +26,7 @@ end
 
 def initial_round
   hand = deal_card + deal_card
-  print hand
+  print "Your cards add up to #{hand}"
   return hand
 end
 
