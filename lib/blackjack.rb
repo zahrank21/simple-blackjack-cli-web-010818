@@ -37,9 +37,9 @@ if get_user_input == "s"
   return result.reduce(:+)
 elsif get_user_input == "h"
   result << deal_card
-  return result.reduce(:+)
 else
-  return invalid_command
+  invalid_command
+  prompt_user
 end
 
 end
