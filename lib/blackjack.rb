@@ -32,19 +32,19 @@ end
 
 def hit?(num)
   prompt_user
-  hit = get_user_input
-  next if hit == "s"
-elsif hit == "h"
-    whole += deal_card
-    display_card_total(whole)
-    if whole > 21
-      end_game(whole)
+  user_hit = get_user_input
+  if user_hit == "s"
+  elsif user_hit == "h"
+    total += deal_card
+    display_card_total(total)
+    if total > 21
+      end_game(total)
     end
   else
     invalid_command
     prompt_user
   end
-  return whole
+  return total
 end
 
 def invalid_command
