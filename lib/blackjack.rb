@@ -21,11 +21,11 @@ def get_user_input
 end
 
 def end_game
-  puts "Sorry"
+  puts "Sorry, thank you for playing"
 end
 
 def initial_round
-  
+
 end
 
 def hit?
