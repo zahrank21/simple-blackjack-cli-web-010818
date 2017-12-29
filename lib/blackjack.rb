@@ -44,7 +44,7 @@ elsif hit == "h"
     invalid_command
     prompt_user
   end
-  return total
+  return whole
 end
 
 def invalid_command
