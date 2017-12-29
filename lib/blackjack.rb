@@ -30,21 +30,21 @@ def initial_round
   return hand
 end
 
-def hit?(total)
+def hit?(num)
   prompt_user
-  user_hit = get_user_input
-  if user_hit == "s"
-  elsif user_hit == "h"
-    total += deal_card
-    display_card_total(total)
+  hit = get_user_input
+  next if hit == "s"
+  elsif hit == "h"
+    num += deal_card
+    display_card_total(num)
     if total > 21
-      end_game(total)
+      end_game(num)
     end
   else
     invalid_command
     prompt_user
   end
-  return total
+  return num
 end
 
 def invalid_command
