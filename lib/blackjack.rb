@@ -37,7 +37,7 @@ def hit?(num)
   elsif hit == "h"
     num += deal_card
     display_card_total(num)
-    if total > 21
+    if num > 21
       end_game(num)
     end
   else
