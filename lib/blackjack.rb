@@ -36,8 +36,8 @@ if get_user_input == "s"
   return num
 elsif get_user_input == "h"
   num += deal_card
-else
-  return invalid_command
+# else
+#   return invalid_command
 end
 
 end
