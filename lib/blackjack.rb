@@ -34,10 +34,9 @@ def hit?(num)
 prompt_user
 result = [num]
 if get_user_input == "s"
-  return num
+  return result.reduce(:+)
 elsif get_user_input == "h"
   result << deal_card
-
 else
   return invalid_command
 end
