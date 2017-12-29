@@ -37,10 +37,10 @@ if get_user_input == "s"
   return num
 elsif get_user_input == "h"
   return num + deal_card
-else 
+else
   return invalid_command
 end
-  
+
 end
 
 def invalid_command
